@@ -34,7 +34,9 @@
 % Load base packages
 \RequirePackage[english]{babel}
 \RequirePackage{graphicx}
-\RequirePackage[colorlinks,urlcolor=blue,hidelinks,breaklinks]{hyperref}
+% avoid bookmarks in PDF (otherwise IEEE PDF eXpress returns an error)
+\RequirePackage[bookmarks=false,colorlinks,urlcolor=blue,hidelinks,
+  breaklinks]{hyperref}
 
 % affiliations
 \newcommand{\authormark}[1]{\textsuperscript{\normalfont#1}}
